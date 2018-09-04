@@ -1,0 +1,10 @@
+<span 
+class="glyphicon" 
+[class.glyphicon-star]='isFavorite'
+[class.glyphicon-star-empty]='!isFavorite'
+(click)="onClick()" style="font-size: 10em" ></span>   
+
+<h1>{{number}}</h1>
+<ul>
+  <li *ngFor="let item of names">{{item}}</li>
+</ul>
