@@ -1,0 +1,37 @@
+<ul>
+  <li *ngFor="let course of courses">{{course.name}}</li>
+</ul>
+
+<!--
+  ngForD
+Forloop with index
+index : number
+first : boolean
+last : boolean
+even : boolean
+odd : boolean
+-->
+<h4>Index</h4>
+<ul>
+  <li *ngFor="let course of courses; index as i ">{{i}} - {{course.name}}</li>
+</ul>
+<p>----------------------------------</p>
+<h4>First</h4>
+<ul>
+  <li *ngFor="let course of courses; first as isFirst" >{{course.name}} <span *ngIf="isFirst">(First)</span></li>
+</ul>
+<p>----------------------------------</p>
+<h4>Last</h4>
+<ul>
+  <li *ngFor="let course of courses; last as isLast " >{{course.name}}<span *ngIf="isLast">(Last)</span></li>
+</ul>
+<p>----------------------------------</p>
+<h4>Even</h4>
+<ul>
+  <li *ngFor="let course of courses; even as isEven "> {{course.name}} <span *ngIf="isEven">(EVEN)</span></li>
+</ul>
+<p>----------------------------------</p>
+<h4>Odd</h4>
+<ul>
+  <li *ngFor="let course of courses; odd as isOdd"> {{course.name}} <span *ngIf="isOdd">(Odd)</span></li>
+</ul>

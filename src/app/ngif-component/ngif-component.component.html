@@ -1,0 +1,21 @@
+<!--
+with *ngIf if a element is truth it will be show in the in dom 
+-->
+
+<div *ngIf="courses.length > 0;then coursesList else noCourses"></div>
+<ng-template #coursesList>
+  List of courses
+</ng-template>
+<ng-template #noCourses>
+  No courses yet
+</ng-template>
+
+<!--
+use the hidden proprety to hide a element in the dom
+-->
+<div [hidden] ="courses.length === 0" >
+  List of courses
+</div>
+<div [hidden] = "courses.length > 0">
+  No courses yet
+</div>

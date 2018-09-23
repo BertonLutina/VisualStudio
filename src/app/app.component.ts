@@ -1,4 +1,4 @@
-import { FavoriteChangedEventArgs, LikeChangedEventArgs } from './favorite/favorite.component';
+import { FavoriteChangedEventArgs /*, LikeChangedEventArgs*/ } from './favorite/favorite.component';
 import { Component } from '@angular/core';
 
 @Component({
@@ -22,9 +22,11 @@ export class AppComponent {
   onchangeFavorite(eventArgs:FavoriteChangedEventArgs){
     console.log("Favorite Changed",eventArgs);
   }
-
+/*
   onchangeLike(eventArgs:LikeChangedEventArgs){
     console.log(this.tweet.likesCount,eventArgs);
   }
+
+  */
  
 }
