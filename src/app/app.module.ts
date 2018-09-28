@@ -26,6 +26,8 @@ import { ContactComponent } from './contact/contact.component';
 import { CourseFormComponent } from './course-form/course-form.component';
 import {SignupFormComponent} from './signup-form/signup-form.component';
 import { NewcourseformComponent } from './newcourseform/newcourseform.component';
+import { PasswordComponent } from './password/password.component';
+import { PostsComponent } from './posts/posts.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +54,9 @@ import { NewcourseformComponent } from './newcourseform/newcourseform.component'
     ZippyComponent,
     ContactComponent,
     CourseFormComponent,
-    NewcourseformComponent
+    NewcourseformComponent,
+    PasswordComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
